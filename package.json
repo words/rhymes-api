@@ -42,5 +42,8 @@
     "poetry"
   ],
   "author": "zeke",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "iojs": "^2.3.2"
+  }
 }
