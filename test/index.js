@@ -27,6 +27,14 @@ describe('GET /rhymes/dog', function () {
         done()
       })
   })
+
+  it('supports CORS', function (done) {
+    supertest(app)
+      .get('/rhymes/dog')
+      .expect('Access-Control-Allow-Origin', '*')
+      .expect(200, done)
+  })
+
 })
 
 describe('GET /rhymes/oksjdfoisdufsd', function () {
